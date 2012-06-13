@@ -149,6 +149,8 @@ rm -f  /var/www/$PROJECT_NAME/latest-fr_FR.tar.gz
 #
 ## MYSQL Stuffz
 #
+# TODO : Script must check if prior database with same name exists. If so must warn user and exit
+
 
 export SQLPROJECT_NAME="`echo $LO_DOMAIN | tr "[:punct:]" "_"`"
 # Note: SQL Doesn't allow a 16 more caracters user name
